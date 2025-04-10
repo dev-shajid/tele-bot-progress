@@ -1,0 +1,352 @@
+2025-04-09 20:00:25,437 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-09 20:00:26,942 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getMe "HTTP/1.1 200 OK"
+2025-04-09 20:00:27,181 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/deleteWebhook "HTTP/1.1 200 OK"
+2025-04-09 20:00:27,187 - apscheduler.scheduler - INFO - Added job "check_due_dates" to job store "default"
+2025-04-09 20:00:27,187 - apscheduler.scheduler - INFO - Scheduler started
+2025-04-09 20:00:27,187 - telegram.ext.Application - INFO - Application started
+2025-04-09 20:00:31,912 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:00:32,181 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 400 Bad Request"
+2025-04-09 20:00:32,193 - __main__ - ERROR - Unexpected error: Can't parse entities: can't find end of the entity starting at byte offset 757
+Traceback (most recent call last):
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/bot.py", line 93, in wrapper
+    return await func(update, context, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/bot.py", line 181, in help_command
+    await update.message.reply_text(
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/_message.py", line 1775, in reply_text
+    return await self.get_bot().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 2977, in send_message
+    return await super().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/_bot.py", line 1091, in send_message
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 618, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/_bot.py", line 803, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/_bot.py", line 691, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 362, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/_bot.py", line 720, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 197, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 353, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Can't parse entities: can't find end of the entity starting at byte offset 757
+
+2025-04-09 20:00:32,599 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 200 OK"
+2025-04-09 20:00:40,464 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:00:41,598 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 400 Bad Request"
+2025-04-09 20:00:41,603 - __main__ - ERROR - Unexpected error: Can't parse entities: can't find end of the entity starting at byte offset 757
+Traceback (most recent call last):
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/bot.py", line 93, in wrapper
+    return await func(update, context, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/bot.py", line 181, in help_command
+    await update.message.reply_text(
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/_message.py", line 1775, in reply_text
+    return await self.get_bot().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 2977, in send_message
+    return await super().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/_bot.py", line 1091, in send_message
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 618, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/_bot.py", line 803, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/_bot.py", line 691, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 362, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/_bot.py", line 720, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 197, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 353, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Can't parse entities: can't find end of the entity starting at byte offset 757
+
+2025-04-09 20:00:42,024 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 200 OK"
+2025-04-09 20:00:45,087 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:00:46,160 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 200 OK"
+2025-04-09 20:00:47,562 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:00:47,924 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-04-09 20:00:48,384 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/editMessageText "HTTP/1.1 200 OK"
+2025-04-09 20:00:50,152 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:00:50,625 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 200 OK"
+2025-04-09 20:00:52,420 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:00:52,790 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-04-09 20:00:53,865 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/editMessageText "HTTP/1.1 200 OK"
+2025-04-09 20:01:02,678 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:01:09,231 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:01:10,691 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 400 Bad Request"
+2025-04-09 20:01:10,695 - __main__ - ERROR - Unexpected error: Can't parse entities: can't find end of the entity starting at byte offset 757
+Traceback (most recent call last):
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/bot.py", line 93, in wrapper
+    return await func(update, context, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/bot.py", line 181, in help_command
+    await update.message.reply_text(
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/_message.py", line 1775, in reply_text
+    return await self.get_bot().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 2977, in send_message
+    return await super().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/_bot.py", line 1091, in send_message
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 618, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/_bot.py", line 803, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/_bot.py", line 691, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 362, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/_bot.py", line 720, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 197, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 353, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Can't parse entities: can't find end of the entity starting at byte offset 757
+
+2025-04-09 20:01:11,111 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 200 OK"
+2025-04-09 20:01:19,507 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:01:30,335 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:01:40,524 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:01:50,715 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:02:00,927 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:02:11,199 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:02:18,310 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-09 20:02:18,957 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getMe "HTTP/1.1 200 OK"
+2025-04-09 20:02:19,138 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/deleteWebhook "HTTP/1.1 200 OK"
+2025-04-09 20:02:19,141 - apscheduler.scheduler - INFO - Added job "check_due_dates" to job store "default"
+2025-04-09 20:02:19,141 - apscheduler.scheduler - INFO - Scheduler started
+2025-04-09 20:02:19,142 - telegram.ext.Application - INFO - Application started
+2025-04-09 20:02:22,510 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:02:22,702 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 400 Bad Request"
+2025-04-09 20:02:22,716 - __main__ - ERROR - Unexpected error: Can't parse entities: unsupported start tag "days" at byte offset 641
+Traceback (most recent call last):
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/bot.py", line 93, in wrapper
+    return await func(update, context, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/bot.py", line 181, in help_command
+    await update.message.reply_text(
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/_message.py", line 1775, in reply_text
+    return await self.get_bot().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 2977, in send_message
+    return await super().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/_bot.py", line 1091, in send_message
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 618, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/_bot.py", line 803, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/_bot.py", line 691, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 362, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/_bot.py", line 720, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 197, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 353, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Can't parse entities: unsupported start tag "days" at byte offset 641
+
+2025-04-09 20:02:23,108 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 200 OK"
+2025-04-09 20:02:32,767 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:02:38,542 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:02:38,545 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-04-09 20:02:38,546 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-04-09 20:02:38,557 - telegram.ext.Application - INFO - Application.stop() complete
+2025-04-09 20:02:41,249 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-09 20:02:42,096 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getMe "HTTP/1.1 200 OK"
+2025-04-09 20:02:42,289 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/deleteWebhook "HTTP/1.1 200 OK"
+2025-04-09 20:02:42,294 - apscheduler.scheduler - INFO - Added job "check_due_dates" to job store "default"
+2025-04-09 20:02:42,295 - apscheduler.scheduler - INFO - Scheduler started
+2025-04-09 20:02:42,295 - telegram.ext.Application - INFO - Application started
+2025-04-09 20:02:44,828 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:02:45,221 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 200 OK"
+2025-04-09 20:02:55,102 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:03:03,616 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:03:04,393 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 200 OK"
+2025-04-09 20:03:13,802 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:03:14,223 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:03:14,965 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 200 OK"
+2025-04-09 20:03:24,352 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:03:25,719 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 200 OK"
+2025-04-09 20:03:28,547 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:03:29,710 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 200 OK"
+2025-04-09 20:03:34,853 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:03:35,673 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 200 OK"
+2025-04-09 20:03:37,623 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:03:38,497 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-04-09 20:03:38,954 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/editMessageText "HTTP/1.1 200 OK"
+2025-04-09 20:03:45,527 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:03:46,559 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 200 OK"
+2025-04-09 20:03:50,662 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:03:51,105 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 200 OK"
+2025-04-09 20:04:00,933 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:04:03,805 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:04:04,363 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 400 Bad Request"
+2025-04-09 20:04:04,378 - __main__ - ERROR - Unexpected error: Can't parse entities: can't find end of the entity starting at byte offset 26
+Traceback (most recent call last):
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/bot.py", line 93, in wrapper
+    return await func(update, context, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/bot.py", line 630, in show_statistics
+    await update.message.reply_text(stats_message, parse_mode='Markdown')
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/_message.py", line 1775, in reply_text
+    return await self.get_bot().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 2977, in send_message
+    return await super().send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/_bot.py", line 1091, in send_message
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 618, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/_bot.py", line 803, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/_bot.py", line 691, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 362, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/_bot.py", line 720, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 197, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohammedsajidulislam/Desktop/Project/progress-bot/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 353, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Can't parse entities: can't find end of the entity starting at byte offset 26
+
+2025-04-09 20:04:04,754 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 200 OK"
+2025-04-09 20:04:12,621 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:04:13,412 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 200 OK"
+2025-04-09 20:04:22,837 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:04:24,773 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:04:25,564 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 200 OK"
+2025-04-09 20:04:30,795 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:04:31,869 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-04-09 20:04:32,251 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/editMessageText "HTTP/1.1 200 OK"
+2025-04-09 20:04:41,074 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:04:43,700 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:04:44,634 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 200 OK"
+2025-04-09 20:04:46,722 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:04:47,198 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-04-09 20:04:47,583 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/editMessageText "HTTP/1.1 200 OK"
+2025-04-09 20:04:57,016 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:05:07,424 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:05:17,660 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:05:27,872 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:05:38,110 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:05:48,299 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:05:58,112 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:05:58,116 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-04-09 20:05:58,118 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-04-09 20:05:58,129 - telegram.ext.Application - INFO - Application.stop() complete
+2025-04-09 20:05:59,957 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-09 20:06:00,513 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getMe "HTTP/1.1 200 OK"
+2025-04-09 20:06:00,711 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/deleteWebhook "HTTP/1.1 200 OK"
+2025-04-09 20:06:00,715 - apscheduler.scheduler - INFO - Added job "check_due_dates" to job store "default"
+2025-04-09 20:06:00,716 - apscheduler.scheduler - INFO - Scheduler started
+2025-04-09 20:06:00,716 - telegram.ext.Application - INFO - Application started
+2025-04-09 20:06:08,015 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:06:09,048 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 200 OK"
+2025-04-09 20:06:18,256 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:06:28,447 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:17:09,595 - __main__ - WARNING - Job queue is not available. Reminders will not be sent. Install with: pip install 'python-telegram-bot[job-queue]'
+2025-04-09 20:17:11,535 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getMe "HTTP/1.1 200 OK"
+2025-04-09 20:17:11,730 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/deleteWebhook "HTTP/1.1 200 OK"
+2025-04-09 20:17:11,734 - telegram.ext.Application - INFO - Application started
+2025-04-09 20:17:22,831 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:17:33,024 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:17:43,207 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:17:53,525 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:18:03,709 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:18:13,971 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-09 20:18:24,511 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-09 20:18:25,103 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getMe "HTTP/1.1 200 OK"
+2025-04-09 20:18:25,290 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/deleteWebhook "HTTP/1.1 200 OK"
+2025-04-09 20:18:25,295 - apscheduler.scheduler - INFO - Added job "check_due_dates" to job store "default"
+2025-04-09 20:18:25,295 - apscheduler.scheduler - INFO - Scheduler started
+2025-04-09 20:18:25,295 - telegram.ext.Application - INFO - Application started
+2025-04-10 06:26:17,695 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-10 06:26:18,347 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getMe "HTTP/1.1 200 OK"
+2025-04-10 06:26:18,524 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/deleteWebhook "HTTP/1.1 200 OK"
+2025-04-10 06:26:18,531 - apscheduler.scheduler - INFO - Added job "check_due_dates" to job store "default"
+2025-04-10 06:26:18,532 - apscheduler.scheduler - INFO - Scheduler started
+2025-04-10 06:26:18,533 - telegram.ext.Application - INFO - Application started
+2025-04-10 06:26:21,437 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-10 06:26:21,838 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 200 OK"
+2025-04-10 06:26:28,434 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-10 06:26:29,160 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-04-10 06:26:29,516 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/editMessageText "HTTP/1.1 200 OK"
+2025-04-10 06:26:38,685 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-10 06:26:48,906 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-10 06:26:59,081 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-10 06:27:09,261 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-10 06:27:19,082 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-10 06:27:19,085 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-04-10 06:27:19,085 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-04-10 06:27:19,096 - telegram.ext.Application - INFO - Application.stop() complete
+2025-04-10 06:27:20,747 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-10 06:27:21,322 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getMe "HTTP/1.1 200 OK"
+2025-04-10 06:27:21,492 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/deleteWebhook "HTTP/1.1 200 OK"
+2025-04-10 06:27:21,494 - apscheduler.scheduler - INFO - Added job "check_due_dates" to job store "default"
+2025-04-10 06:27:21,494 - apscheduler.scheduler - INFO - Scheduler started
+2025-04-10 06:27:21,494 - telegram.ext.Application - INFO - Application started
+2025-04-10 06:27:26,642 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-10 06:27:27,351 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/sendMessage "HTTP/1.1 200 OK"
+2025-04-10 06:27:30,607 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-10 06:27:30,949 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-04-10 06:27:31,304 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/editMessageText "HTTP/1.1 200 OK"
+2025-04-10 06:27:40,788 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-10 06:27:48,265 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7919342731:AAHeu-MoAd1MJgh1Blq51OpZZWkA2fRYKy8/getUpdates "HTTP/1.1 200 OK"
+2025-04-10 06:27:48,268 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-04-10 06:27:48,270 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-04-10 06:27:48,280 - telegram.ext.Application - INFO - Application.stop() complete
