@@ -1,0 +1,26 @@
+{
+    "current_field": "software_engineering",
+    "syllabi": {
+        "software_engineering": {
+            "tasks": [
+                "\ud83d\udcda **Week 1-2: Foundations of Distributed Systems & Scalability** - Learn CAP theorem, load balancing, and build a distributed Node.js app with Nginx and PostgreSQL.",
+                "\ud83c\udfd7\ufe0f **Week 3-4: Microservices Architecture** - Design microservices, use Docker, REST/gRPC, and deploy to Kubernetes.",
+                "\u2601\ufe0f **Week 5-6: Cloud Infrastructure & DevOps** - Automate with Terraform, set up CI/CD, and monitor with Prometheus/Grafana.",
+                "\u23f0 **Week 7-8: Real-Time Systems & Event-Driven Architecture** - Use WebSockets, Kafka, and Redis for real-time features.",
+                "\ud83d\udee1\ufe0f **Week 9-10: Security & Privacy Engineering** - Implement OAuth 2.0, JWT, and secure against OWASP Top 10.",
+                "\ud83e\uddea **Week 11-12: Advanced Testing & Quality Assurance** - Write unit, integration, and E2E tests with Pytest and Playwright.",
+                "\ud83d\ude80 **Week 13-14: Performance Engineering & Optimization** - Optimize for speed with caching, sharding, and CDNs.",
+                "\ud83c\udfed **Week 15-16: Platform Engineering & Advanced System Design** - Build internal developer portals and implement SRE practices."
+            ],
+            "paused": false
+        },
+        "data_science": {
+            "tasks": [
+                "\ud83d\udcca **Week 1: Data Analysis** - Learn pandas and matplotlib",
+                "\ud83d\udcc8 **Week 2: Machine Learning** - Study scikit-learn basics"
+            ],
+            "paused": false
+        }
+    }
+}
+

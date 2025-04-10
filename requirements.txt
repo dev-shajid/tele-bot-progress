@@ -1,0 +1,7 @@
+# Dependencies for the Progress Bot Telegram application
+
+# Core telegram bot functionality
+python-telegram-bot[job-queue]      # Latest stable version with async support and job queue
+
+# Environment variable management
+python-dotenv          # For loading .env files with bot tokens

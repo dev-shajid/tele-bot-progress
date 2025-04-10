@@ -1,0 +1,31 @@
+{
+    "current_week": 1,
+    "completed_weeks": [],
+    "start_date": "2025-04-09T19:38:27.010455",
+    "syllabi_progress": {
+        "software_engineering": {
+            "current_week": 4,
+            "completed_weeks": [
+                0,
+                2
+            ],
+            "start_date": "2025-04-09T19:37:15.708597",
+            "due_date": "2025-04-17T06:27:30.951825",
+            "completion_dates": {
+                "0": "2025-04-09T20:00:52.792723",
+                "2": "2025-04-10T06:27:30.951489"
+            }
+        },
+        "data_science": {
+            "current_week": 1,
+            "completed_weeks": [],
+            "start_date": "2025-04-09T20:04:31.872154",
+            "due_date": "2025-04-16T20:04:31.872182"
+        }
+    },
+    "global_settings": {
+        "reminder_interval": 7,
+        "reminders_enabled": true,
+        "last_check": "2025-04-09T20:00:47.927529"
+    }
+}
